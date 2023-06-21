@@ -62,11 +62,9 @@
             document.getElementById('h').innerHTML = h < 10 ? "0" + h : h;
             document.getElementById('m').innerHTML = m < 10 ? "0" + m : m;
             document.getElementById('s').innerHTML = s < 10 ? "0" + s : s;
-
-            setTimeout(showDateTime, 1000); // 每秒更新一次
         }
 
-        showDateTime(); // 调用函数开始计时
+        setInterval(showDateTime, 1000); // 使用 setInterval 每秒更新一次
     </script>
 
 </body>
